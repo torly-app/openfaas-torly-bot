@@ -1,7 +1,8 @@
 steps:
 ## Shinkwrap
 - name: 'gcr.io/$PROJECT_ID/faas-cli:0.12.14'
-  args: ['faas-cli', 'template', 'store', 'pull', 'node8-express']
+  args: ['faas-cli', 'template', 'store', 'pull', 'node12']
+  
 - name: 'gcr.io/$PROJECT_ID/faas-cli:0.12.14'
   args: ['faas-cli', 'build', '--shrinkwrap']
   
